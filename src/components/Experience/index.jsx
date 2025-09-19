@@ -1,14 +1,17 @@
 import "./Experience.css";
 
+
 import gsap from "gsap";
 import { useGSAP } from "@gsap/react";
 import { ScrollTrigger } from "gsap/ScrollTrigger";
 
 import { expCards } from "../../constants";
 import GlowCard from "../../ui/GlowCard";
-import Tech from "../../ui/Tech";
 
 gsap.registerPlugin(ScrollTrigger);
+
+
+
 
 const Experience = () => {
   useGSAP(() => {
@@ -132,8 +135,7 @@ const Experience = () => {
             ))}
           </div>
         </div>
-
-        {/* <Tech /> */}
+       
       </div>
     </section>
   );

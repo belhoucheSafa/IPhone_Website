@@ -57,12 +57,21 @@ const Navbar = () => {
         </div>
       </aside>
       <div className="flex__center buttons__wrapper">
-        <Link to="contact" className="btn flex__center hire__btn">
+        {/* <Link to="contact" className="btn flex__center hire__btn">
           Hire Me
           <div className="flex__center icon">
             <FaArrowUpRightFromSquare />
           </div>
-        </Link>
+        </Link> */}
+
+        <div
+
+          className="user-profile"
+        >
+          <div class="user-profile-inner">
+            <p>Download CV</p>
+          </div>
+        </div>
 
         <FaBarsStaggered
           className="menu"

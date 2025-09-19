@@ -16,6 +16,7 @@ import About from "./components/About";
 
 import "slick-carousel/slick/slick.css"; 
 import "slick-carousel/slick/slick-theme.css";
+import LogosLoop from "./components/LogosLoop";
 
 const App = () => {
   return (
@@ -25,11 +26,12 @@ const App = () => {
       <About />
       <Services />
       <Experience />
+      <LogosLoop />
       <Projects />
       {/* <Testimonials /> */}
       <Contact />
       <Footer />
-      <SplashCursor />
+      {/* <SplashCursor /> */}
     </>
   );
 };

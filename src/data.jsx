@@ -35,9 +35,9 @@ import {
 export const menu = [
   { name: "About" },
   { name: "Services" },
-  { name: "Experience" },
+  { name: "Education & Experience" },
   { name: "Projects" },
-  { name: "Testimonial" },
+  // { name: "Testimonial" },
   { name: "Contact" },
 ];
 
