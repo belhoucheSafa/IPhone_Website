@@ -28,7 +28,7 @@ export { default as whatsappicon } from "./icons/whatsapp.png";
 // Icons export (new set)
 export { default as css } from "./css.png";
 export { default as docker } from "./docker.png";
-export { default as figma } from "./figma.png"; // Removed duplicate from icons directory
+export { default as figma } from "./figma.png"; 
 export { default as git } from "./git.png";
 export { default as html } from "./html.png";
 export { default as javascript } from "./javascript.png";

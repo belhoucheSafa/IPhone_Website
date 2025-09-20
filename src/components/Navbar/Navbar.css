@@ -7,7 +7,7 @@
   top: 20px;
   z-index: 200;
   width: 90%;
-  max-width: 1000px;
+  max-width: 1030px;
   transform: translateX(-50%);
   border-radius: 50px;
 }
@@ -139,8 +139,8 @@
   border-radius: 10px;
   cursor: pointer;
   transition: 0.3s ease;
-  background: linear-gradient(
-    to bottom right,
+  background:linear-gradient(
+    to bottom left,
     var(--color-primary) 0%,
     #702dff0a 30%
   );

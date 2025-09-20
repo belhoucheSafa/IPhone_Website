@@ -104,7 +104,6 @@ const Experience = () => {
           <div className="experience-cards">
             {expCards.map((card) => (
               <div key={card.title} className="exp-card-wrapper">
-                <div className="right">
                   <div className="timeline-wrapper">
                     <div className="timeline" />
                     <div className="gradient-line" />
@@ -130,7 +129,6 @@ const Experience = () => {
                       </div>
                     </div>
                   </div>
-                </div>
               </div>
             ))}
           </div>

@@ -4,15 +4,14 @@
   z-index: 40;
   overflow: hidden;
   transition: border-color 1s ease-in-out;
-  border: 1px solid #1c1c21; 
-  background-color: #0e0e105c; 
-  border-radius: 0.75rem; 
-  padding: 30px 20px; 
-  break-inside: avoid-column; 
+  border: 1px solid #1c1c21;
+  background-color: #0e0e105c;
+  border-radius: 0.75rem;
+  padding: 30px 20px;
+  break-inside: avoid-column;
   display: flex;
   flex-direction: column;
   width: 100%;
-
 }
 
 .card__glow::before {
@@ -71,11 +70,14 @@
 
 /* Base star images */
 .card__glow .stars img.star-img {
-  width: 1.25rem; /* size-5 = 20px */
+  width: 1.25rem;
   height: 1.25rem;
-  transform: translateY(0); /* translate-y-0 */
-  transition: all 0.5s ease; /* transition-all duration-500 */
-  animation: bounce 1s infinite; /* animate-bounce */
+  transform: translateY(0);
+  transition: all 0.5s ease;
+  animation: bounce 1s infinite;
+
+  filter: invert(68%) sepia(100%) saturate(700%) hue-rotate(10deg) brightness(100%) contrast(100%);
+
 }
 
 /* xl:-translate-y-32 → only on XL screens and above (≥1280px) */

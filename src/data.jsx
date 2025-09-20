@@ -6,6 +6,8 @@ import { GiIdea } from "react-icons/gi";
 import { MdOutlineEmail } from "react-icons/md";
 import { RiMessengerLine } from "react-icons/ri";
 import { BsWhatsapp } from "react-icons/bs";
+import { FaCode, FaProjectDiagram } from "react-icons/fa";
+
 import {
   project1,
   project2,
@@ -43,34 +45,33 @@ export const menu = [
 
 export const services = [
   {
-    title: "UI/UX Design",
+    title: "UI / UX Design",
     color: "#2563eb",
     colorRGB: "37, 99, 235",
     icon: <FaPaintBrush />,
-    description: `Crafting visually stunning and user-centric designs that ensure seamless user experiences. 
-                  From wireframes to high-fidelity prototypes, I focus on creating intuitive interfaces that 
-                  blend creativity and functionality, enhancing engagement and usability.`,
+    description: `As a software engineering student, I design intuitive and engaging interfaces. 
+                  From wireframes to polished prototypes, I focus on user-centric designs 
+                  that combine creativity and functionality, ensuring seamless experiences across all platforms.`,
   },
   {
     title: "Web Development",
-    icon: <FaCodeCompare />,
+    icon: <FaCode />,
     color: "blueviolet",
     colorRGB: "138, 43, 226",
-    description: `Building responsive, dynamic, and high-performance websites tailored to your needs. 
-    Using modern technologies like React, Node.js, and more, I ensure your site is optimized 
-    for speed, scalability, and accessibility, delivering a robust online presence.`,
+    description: `I build responsive and high-performance applications using modern technologies 
+                  like React, Node.js, and more. My work covers everything from frontend to backend, 
+                  creating scalable, maintainable, and efficient solutions for real-world problems.`,
   },
   {
-    title: "Content Creation",
-    icon: <GiIdea />,
+    title: "Project Conception",
+    icon: <FaProjectDiagram />,
     color: "var(--color-success)",
     colorRGB: "var(--color-success-rgb)",
-    description: `Producing compelling digital content that resonates with your audience. From blogs 
-                  and technical documentation to engaging website copy, I ensure your brand's message 
-                  is clear, impactful, and aligned with your business goals.`,
+    description: `I am involved in the full lifecycle of software projects, including planning, 
+                  architecture design, and implementation. I ensure that ideas are transformed 
+                  into practical and robust solutions that meet technical and business requirements.`,
   },
 ];
-
 export const projects = [
   {
     title: "AI Powered School",
@@ -211,7 +212,6 @@ export const projects = [
 ];
 
 export const skills = [
-  
   {
     title: "UI/UX",
     data: [
@@ -272,7 +272,6 @@ export const skills = [
       },
     ],
   },
- 
 ];
 export const contactInfo = [
   {

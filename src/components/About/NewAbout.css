@@ -5,82 +5,6 @@
   justify-content: center;
 }
 
-/* 
-
-.about__card {
-  background: #111;
-  padding: 2rem;
-  border-radius: 20px;
-  color: #fff;
-  position: relative;
-  z-index: 2;
-}
-
-.title {
-  font-size: 28px;
-  font-weight: 600;
-  margin-bottom: 10px;
-}
-
-.sub_title {
-  font-size: 18px;
-  font-weight: 400;
-  margin-bottom: 15px;
-  color: #aaa;
-}
-
-.highlight {
-  color: var(--color-primary, #7b5cff);
-}
-
-.desc {
-  font-size: 16px;
-  line-height: 1.6;
-  color: #ccc;
-}
-
-.profile__img {
-  width: 80px;
-  height: 80px;
-  border-radius: 50%;
-  margin-bottom: 15px;
-}
-
-.code__block {
-  background: #0a0a0a;
-  padding: 1rem;
-  border-radius: 12px;
-  font-family: "Fira Code", monospace;
-  font-size: 14px;
-  color: #4ade80;
-  white-space: pre-wrap;
-}
-
-.stack__grid {
-  display: flex;
-  flex-wrap: wrap;
-  gap: 1rem;
-  margin-top: 1rem;
-}
-
-.stack__item {
-  background: #1f1f1f;
-  padding: 0.5rem 1rem;
-  border-radius: 10px;
-  font-size: 14px;
-}
-
-.btn {
-  background: linear-gradient(135deg, #7b5cff, #5ce1e6);
-  padding: 0.75rem 1.5rem;
-  border: none;
-  border-radius: 12px;
-  font-size: 16px;
-  font-weight: bold;
-  color: #fff;
-  cursor: pointer;
-} */
-
 .spotlight {
   position: absolute;
   width: 200px;
@@ -173,7 +97,8 @@
   justify-content: center;
 }
 .avatar > img {
-  width: 30px;
+  margin-top: -2px;
+  width: 33px;
   object-fit: contain;
 }
 
@@ -360,4 +285,3 @@
   overflow: hidden;
   width: 100%;
 }
-

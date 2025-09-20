@@ -2,13 +2,18 @@ import { useRef } from "react";
 import "./NewAbout.css";
 import SyntaxHighlight from "react-syntax-highlighter";
 import { a11yLight } from "react-syntax-highlighter/dist/esm/styles/hljs";
-import me from "../../assets/newAboutAssets/me.png";
+import me from "../../assets/newAboutAssets/me2.png";
 import Window from "../../assets/newAboutAssets/icons/window.svg";
 import CopyEmailButton from "../../ui/CopyEmailButton";
 import MotionCard from "../../ui/MotionCard";
 import CSharpLogo from "../../assets/logos/csharp-pink.png";
 import DotNetLogo from "../../assets/logos/dotnet-pink.png";
 import BlazorLogo from "../../assets/logos/blazor-pink.png";
+import NodejsLogo from "../../assets/nodejs.png";
+import ReactjsLogo from "../../assets/reactjs.png";
+import ReduxLogo from "../../assets/redux.png";
+import TypescriptLogo from "../../assets/typescript.png";
+import ThreejsLogo from "../../assets/threejs.svg";
 
 const code = `
   const developer = {
@@ -21,7 +26,7 @@ const code = `
     }
   }
   `;
-  const customTheme = {
+const customTheme = {
   ...a11yLight,
   // override token colors
   "hljs-comment": { color: "#888888", fontStyle: "italic" }, // comments
@@ -30,6 +35,34 @@ const code = `
   "hljs-string": { color: "#57b765" }, // strings
   "hljs-variable": { color: "#9467f5" }, // general purple
 };
+
+const motionTexts = [
+  { text: "GRASP", rotate: 55, top: "19%", left: "5%" },
+  {
+    text: "SOLID",
+    rotate: 0,
+    top: "60%",
+    left: "75%",
+    className: "special-motion-card",
+  },
+  { text: "Design Patterns", rotate: 10, bottom: "10%", left: "70%" },
+  { text: "Design Principles", rotate: -30, top: "55%", left: "0%" },
+  { text: "SRP", rotate: 20, top: "10%", left: "38%" , className: "special-motion-card" },
+  { text: "TypeScript", rotate: -20, top: "65%", left: "27%" },
+  { text: "React", rotate: 35, top: "20%", left: "30%" },
+  { text: "Node.js", rotate: -15, top: "25%", left: "60%" },
+  { text: "GraphQL", rotate: 25, top: "35%", left: "82%" },
+  { text: "Microservices", rotate: -30, top: "120%", left: "15%" },
+];
+
+const motionImages = [
+  { image: CSharpLogo, rotate: 30, top: "30%", left: "50%" },
+  { image: BlazorLogo, rotate: -45, top: "-33%", left: "90%" },
+  { image: DotNetLogo, rotate: -45, top: "7%", left: "-16%" },
+  { image: ReduxLogo, rotate: 0, top: "34%", left: "13%" },
+
+];
+
 const About = () => {
   const grid2Container = useRef();
 
@@ -104,55 +137,42 @@ const About = () => {
             </div>
           </div>
           <div className="about__cards__row">
-            
-
             <div className="about__card__3__left about__card">
               <div
                 ref={grid2Container}
                 className="flex items-center justify-center w-full h-full"
               >
                 <p className="shine">CODE IS CRAFT</p>
-                <MotionCard
-                  style={{ rotate: "75deg", top: "50%", left: "20%" }}
-                  text="GRASP"
-                  containerRef={grid2Container}
-                />
-                <MotionCard
-                  style={{ rotate: "-30deg", top: "60%", left: "55%" }}
-                  text="SOLID"
-                  containerRef={grid2Container}
-                  className="special-motion-card"
-                />
-                <MotionCard
-                  style={{ rotate: "30deg", bottom: "30%", left: "70%" }}
-                  text="Design Patterns"
-                  containerRef={grid2Container}
-                />
-                <MotionCard
-                  style={{ rotate: "-45deg", top: "55%", left: "0%" }}
-                  text="Design Principles"
-                  containerRef={grid2Container}
-                />
-                <MotionCard
-                  style={{ rotate: "20deg", top: "10%", left: "38%" }}
-                  text="SRP"
-                  containerRef={grid2Container}
-                />
-                <MotionCard
-                  style={{ rotate: "30deg", top: "70%", left: "70%" }}
-                  image={CSharpLogo}
-                  containerRef={grid2Container}
-                />
-                <MotionCard
-                  style={{ rotate: "-45deg", top: "30%", left: "25%" }}
-                  image={BlazorLogo}
-                  containerRef={grid2Container}
-                />
-                <MotionCard
-                  style={{ rotate: "-45deg", top: "0%", left: "0%" }}
-                  image={DotNetLogo}
-                  containerRef={grid2Container}
-                />
+                {/* Render text cards */}
+                {motionTexts.map((item, index) => (
+                  <MotionCard
+                    key={`text-${index}`}
+                    style={{
+                      rotate: `${item.rotate}deg`,
+                      top: item.top || undefined,
+                      bottom: item.bottom || undefined,
+                      left: item.left,
+                    }}
+                    text={item.text}
+                    className={item.className || ""}
+                    containerRef={grid2Container}
+                  />
+                ))}
+
+                {/* Render image cards */}
+                {motionImages.map((item, index) => (
+                  <MotionCard
+                    key={`image-${index}`}
+                    style={{
+                      rotate: `${item.rotate}deg`,
+                      top: item.top || undefined,
+                      bottom: item.bottom || undefined,
+                      left: item.left,
+                    }}
+                    image={item.image}
+                    containerRef={grid2Container}
+                  />
+                ))}
               </div>
             </div>
 

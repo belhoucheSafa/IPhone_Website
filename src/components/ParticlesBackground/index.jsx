@@ -10,7 +10,7 @@ const ParticlesBackground = () => {
 
   return (
     <Particles
-      id="footer-particles"
+      id="bg-particles"
       init={particlesInit}
       options={{
         background: { color: { value: "transparent" } },

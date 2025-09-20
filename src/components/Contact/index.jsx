@@ -4,7 +4,6 @@ import { contactInfo } from "../../data";
 import SocialHandles from "../../ui/SocialHandles";
 import { BsFillSendFill } from "react-icons/bs";
 const Contact = () => {
-  console.log(contactInfo);
   return (
     <section id="contact">
       <div className="section__wrapper">
