@@ -1,8 +1,6 @@
 #contact {
   overflow: hidden;
   margin-top: 300px;
-
-
 }
 
 #contact .section__wrapper {
@@ -40,7 +38,7 @@
   font-weight: 900;
 }
 
-.contact__span__title{
+.contact__span__title {
   margin-right: 9px;
 }
 #contact .contact__options {
@@ -69,46 +67,41 @@
   align-items: center;
   justify-content: center;
   flex-direction: column;
-
 }
 
 #contact .contact__icon img {
   object-fit: contain;
 }
 
-
 #contact .contact__content {
-    flex: 1;
-    justify-content: space-between;
-    gap: 1rem;
-    align-items: center;
-    
+  flex: 1;
+  justify-content: space-between;
+  gap: 1rem;
+  align-items: center;
 }
 
 #contact .contact__content .name {
-    font-size: 16px;
+  font-size: 16px;
 }
 
 #contact .contact__content .value {
-    font-size: 14px;
+  font-size: 14px;
 }
 
 #contact .option .btn {
-    justify-content: space-between;
-    padding : 6px 7px!important;
-    display: flex;
-    align-items: center;
-    flex-direction: row;
-    gap: 10px;
-
-   
+  justify-content: space-between;
+  padding: 6px 7px !important;
+  display: flex;
+  align-items: center;
+  flex-direction: row;
+  gap: 10px;
 }
 
 #contact .option .btn .text {
-    flex: 1;
-    font-size: 17px;
-    letter-spacing: 1.2px;
-    padding-left: 10px;
+  flex: 1;
+  font-size: 17px;
+  letter-spacing: 1.2px;
+  padding-left: 10px;
 }
 
 #contact .option .btn .icon {
@@ -117,9 +110,6 @@
   height: 35px;
   border-radius: 50%;
 }
-
-
-
 
 #contact .option .btn svg {
   transition-duration: 1.5s;
@@ -221,7 +211,7 @@ textarea:focus {
   }
 }
 
-@media (max-width: 800px) {
+@media (max-width: 992px) {
   #contact .contact__group {
     grid-template-columns: 100%;
     gap: 2rem;
@@ -237,5 +227,17 @@ textarea:focus {
   }
   #contact .contact__content {
     flex-direction: column;
+  }
+
+  #contact .option .btn {
+    display: none;
+  }
+
+  #contact .contact__content {
+    align-items: flex-start;
+  }
+
+  .social__handles__container {
+    display: none;
   }
 }

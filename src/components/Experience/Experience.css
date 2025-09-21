@@ -181,7 +181,7 @@
   color: #fff;
 }
 .expText ul li {
-  font-size: 16px; 
+  font-size: 16px;
   font-weight: 400;
 }
 .expText .my-5 {
@@ -226,5 +226,13 @@
   }
   .exp__details__wrapper .right__details {
     width: 90%;
+  }
+
+  .experience-inner {
+    padding: 0px;
+  }
+
+  .left__details {
+    margin-left: 2%;
   }
 }

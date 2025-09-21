@@ -58,8 +58,8 @@
 .card__glow .stars {
   display: flex;
   align-items: center;
-  gap: 0.25rem; 
-  margin-bottom: 10px; 
+  gap: 0.25rem;
+  margin-bottom: 10px;
 }
 
 /* Stars image size */
@@ -76,8 +76,8 @@
   transition: all 0.5s ease;
   animation: bounce 1s infinite;
 
-  filter: invert(68%) sepia(100%) saturate(700%) hue-rotate(10deg) brightness(100%) contrast(100%);
-
+  filter: invert(68%) sepia(100%) saturate(700%) hue-rotate(10deg)
+    brightness(100%) contrast(100%);
 }
 
 /* xl:-translate-y-32 → only on XL screens and above (≥1280px) */
@@ -104,7 +104,13 @@
 }
 
 /* Review text */
-.card__glow .review>p {
-  font-size: 14px ; 
-  color: #d9ecff; 
+.card__glow .review > p {
+  font-size: 14px;
+  color: #d9ecff;
+}
+
+@media (max-width: 900px) {
+  .card__glow {
+    margin-left: 2%;
+  }
 }

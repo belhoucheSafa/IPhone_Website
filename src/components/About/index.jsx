@@ -1,5 +1,5 @@
 import { useRef } from "react";
-import "./NewAbout.css";
+import "./About.css";
 import SyntaxHighlight from "react-syntax-highlighter";
 import { a11yLight } from "react-syntax-highlighter/dist/esm/styles/hljs";
 import me from "../../assets/newAboutAssets/me2.png";
@@ -9,11 +9,8 @@ import MotionCard from "../../ui/MotionCard";
 import CSharpLogo from "../../assets/logos/csharp-pink.png";
 import DotNetLogo from "../../assets/logos/dotnet-pink.png";
 import BlazorLogo from "../../assets/logos/blazor-pink.png";
-import NodejsLogo from "../../assets/nodejs.png";
-import ReactjsLogo from "../../assets/reactjs.png";
 import ReduxLogo from "../../assets/redux.png";
-import TypescriptLogo from "../../assets/typescript.png";
-import ThreejsLogo from "../../assets/threejs.svg";
+
 
 const code = `
   const developer = {
@@ -62,6 +59,7 @@ const motionImages = [
 
 ];
 
+
 const About = () => {
   const grid2Container = useRef();
 
@@ -69,32 +67,36 @@ const About = () => {
     <section id="new__about">
       <div className="section__wrapper">
         <div className="about__cards__wrapper">
+          {/* Row 1 */}
           <div className="about__cards__row">
-            <div className="about__card__1__left about__card">
+            {/* Left Card */}
+            <div className="about__card about__card__1__left">
               <div className="spotlight"></div>
-              <img src={Window} alt="" className="window" />
+              <img src={Window} alt="Window" className="window" />
 
               <div className="about__card__1__left__profile">
                 <div className="avatar">
-                  <img src={me} alt="" />
+                  <img src={me} alt="Safa Belhouche" />
                 </div>
                 <div className="details">
                   <div className="top">Safa Belhouche</div>
                   <div className="bottom">Student & Software Developer</div>
                 </div>
               </div>
+
               <div className="about__card__1__left__description__1">
                 <div className="colored__text">Passionate</div>
                 Developer and <br /> Lifelong Learner
               </div>
+
               <div className="about__card__1__left__description__2">
                 I adapt to different time zones to make sure communication is
                 smooth, no matter where you're located.
               </div>
             </div>
 
-            <div className="about__card__2__right about__card">
-              {/* <div className="spotlight"></div> */}
+            {/* Right Card */}
+            <div className="about__card about__card__2__right">
               <div className="about__card__2__right__code__block_wrapper">
                 <div className="three__dots_wrapper">
                   <div className="one__dot dot__1"></div>
@@ -102,9 +104,8 @@ const About = () => {
                   <div className="one__dot dot__3"></div>
                 </div>
                 <div className="code__block__wrapper">
-                  {/* <CodeBlock language={"javascript"} code={code} /> */}
                   <SyntaxHighlight
-                    language={"javascript"}
+                    language="javascript"
                     style={customTheme}
                     className="block__code__wrapper"
                     customStyle={{
@@ -113,43 +114,47 @@ const About = () => {
                       padding: "0px",
                       fontSize: "12px",
                     }}
-                    wrapLongLines={true}
+                    wrapLongLines
                   >
                     {code}
                   </SyntaxHighlight>
                 </div>
               </div>
+
               <div className="about__card__2__right__details">
                 <div className="about__title shine">
-                  What <span className="highlight ">Drives Me</span>
+                  What <span className="highlight">Drives Me</span>
                 </div>
                 <div className="about__desc">
                   I'm passionate about the intersection of design 🎨 and
                   development 💻. I believe the best digital experiences are
                   built with a deep understanding of the user 👤 and a
                   commitment to innovation 🌟.
-                  <br /> Whether working on a simple landing page or a complex
-                  web app, I bring precision ✍️, creativity ✨, and a user-first
-                  mindset to every project.
+                  <br />
+                  Whether working on a simple landing page or a complex web app,
+                  I bring precision ✍️, creativity ✨, and a user-first mindset
+                  to every project.
                 </div>
               </div>
             </div>
           </div>
+
+          {/* Row 2 */}
           <div className="about__cards__row">
-            <div className="about__card__3__left about__card">
+            {/* Left Card */}
+            <div className="about__card about__card__3__left">
               <div
                 ref={grid2Container}
-                className="flex items-center justify-center w-full h-full"
+                className="motion__grid"
               >
                 <p className="shine">CODE IS CRAFT</p>
-                {/* Render text cards */}
-                {motionTexts.map((item, index) => (
+                {motionTexts.map((item, i) => (
                   <MotionCard
-                    key={`text-${index}`}
+                    key={`text-${i}`}
                     style={{
                       rotate: `${item.rotate}deg`,
-                      top: item.top || undefined,
-                      bottom: item.bottom || undefined,
+                      top: item.top,
+                      bottom: item.bottom,
                       left: item.left,
                     }}
                     text={item.text}
@@ -157,15 +162,13 @@ const About = () => {
                     containerRef={grid2Container}
                   />
                 ))}
-
-                {/* Render image cards */}
-                {motionImages.map((item, index) => (
+                {motionImages.map((item, i) => (
                   <MotionCard
-                    key={`image-${index}`}
+                    key={`img-${i}`}
                     style={{
                       rotate: `${item.rotate}deg`,
-                      top: item.top || undefined,
-                      bottom: item.bottom || undefined,
+                      top: item.top,
+                      bottom: item.bottom,
                       left: item.left,
                     }}
                     image={item.image}
@@ -175,15 +178,17 @@ const About = () => {
               </div>
             </div>
 
-            <div className="about__card__4__right about__card">
+            {/* Right Card */}
+            <div className="about__card about__card__4__right">
               <div className="collab__text">
-                I'm Committed to Collaboration and Clear <br /> Communication
+                I'm Committed to Collaboration and Clear Communication
               </div>
               <div className="copy__mail__btn__wrapper">
                 <CopyEmailButton />
               </div>
             </div>
           </div>
+          
         </div>
       </div>
     </section>
