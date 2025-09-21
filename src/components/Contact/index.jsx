@@ -13,8 +13,8 @@ const Contact = () => {
         <div className="contact__group">
           <div>
             <h3 className="title">
-              Let's talk on your <span className="shine">creative project</span>
-              together
+              Let's talk on your <span className="shine contact__span__title">creative project</span>
+            together
             </h3>
             <div className="flex contact__options">
               {contactInfo.map((contact, index) => (

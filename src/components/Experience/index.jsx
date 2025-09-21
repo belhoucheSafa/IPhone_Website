@@ -96,7 +96,7 @@ const Experience = () => {
     <section id="experience">
       <div className="section__wrapper">
         <div className="section__header">
-          <h2 className="shine">Professional Work Experience</h2>
+          <h2 className="shine">Education & Experience</h2>
         </div>
         <div className="experience-inner">
           <div className="experience-cards">

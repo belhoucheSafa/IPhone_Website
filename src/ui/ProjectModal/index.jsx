@@ -6,6 +6,8 @@ import ParticlesBackground from "../../components/ParticlesBackground";
 import PROJECTDEMOVIDEO from "../../assets/videos/project1.mp4";
 import SyntaxHighlight from "react-syntax-highlighter";
 import { a11yLight } from "react-syntax-highlighter/dist/esm/styles/hljs";
+import { IoLockClosed } from "react-icons/io5";
+import { IoIosClose } from "react-icons/io";
 
 const projectCode = `
 const project = {
@@ -34,7 +36,7 @@ const customTheme = {
   "hljs-keyword": { color: "#cf7f4a", fontWeight: "bold" }, // keywords
   "hljs-number": { color: "#cf7f4a" }, // constants
   "hljs-string": { color: "#bab5c1" }, // strings
-  "hljs-variable": { color: "#7c3fff"  ,fontWeight: "bold" }, // general purple
+  "hljs-variable": { color: "#7c3fff", fontWeight: "bold" }, // general purple
 };
 const ProjectModal = ({ isOpen, onClose }) => {
   const [animationClass, setAnimationClass] = useState("");
@@ -93,8 +95,6 @@ const ProjectModal = ({ isOpen, onClose }) => {
     <>
       <div id="modal-container" className={animationClass}>
         <div className="modal-wrapper">
-          <ParticlesBackground />
-
           <div className="modal-background">
             <div className="modal" ref={modalRef}>
               <div className="screen__top__bar">
@@ -108,7 +108,8 @@ const ProjectModal = ({ isOpen, onClose }) => {
                   <div className="one__dot__modal dot__3"></div>
                 </div>
                 <div className="screen__tab__title">
-                  Demo | E-Commerce Application
+                  <IoLockClosed className="locked__icon" />{" "}
+                  https://Demo/E-Commerce Application
                 </div>
               </div>
               <div className="screen__content">
@@ -141,23 +142,22 @@ const ProjectModal = ({ isOpen, onClose }) => {
                 <div className="demo__details__box">
                   <div className="demo__details__code__block">
                     <SyntaxHighlight
-                    language="javascript"
-                    style={customTheme}
-                    className="block__code__wrapper__demo"
-                    customStyle={{
-                      background: "transparent",
-                      padding: "10px",
-                      fontSize: "14px",
-                      textAlign: "left",
-                      color: "#7c3fff",
-                      whiteSpace: "pre-wrap",
-                    }}
-                    wrapLongLines={true}
-                  >
-                    {projectCode}
-                  </SyntaxHighlight>
+                      language="javascript"
+                      style={customTheme}
+                      className="block__code__wrapper__demo"
+                      customStyle={{
+                        background: "transparent",
+                        padding: "10px",
+                        fontSize: "14px",
+                        textAlign: "left",
+                        color: "#7c3fff",
+                        whiteSpace: "pre-wrap",
+                      }}
+                      wrapLongLines={true}
+                    >
+                      {projectCode}
+                    </SyntaxHighlight>
                   </div>
-                  
                 </div>
               </div>
             </div>
@@ -169,7 +169,3 @@ const ProjectModal = ({ isOpen, onClose }) => {
 };
 
 export default ProjectModal;
-
-
-
-

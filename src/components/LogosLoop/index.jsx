@@ -6,10 +6,10 @@ import {
   SiTailwindcss,
   SiThreedotjs,
   SiRedux,
-  SiNodedotjs ,
-  SiJavascript ,
-  SiMongodb ,
-  SiSqlite 
+  SiNodedotjs,
+  SiJavascript,
+  SiMongodb,
+  SiSqlite,
 } from "react-icons/si";
 
 const techLogos = [
@@ -27,33 +27,33 @@ const techLogos = [
   },
   {
     node: <SiThreedotjs />,
-    title: "Three JS",
-    href: "https://tailwindcss.com",
+    title: "Three.js",
+    href: "https://threejs.org",
   },
   {
     node: <SiNodedotjs />,
-    title: "Node JS",
-    href: "https://tailwindcss.com",
+    title: "Node.js",
+    href: "https://nodejs.org",
   },
   {
     node: <SiRedux />,
     title: "Redux",
-    href: "https://tailwindcss.com",
+    href: "https://redux.js.org",
   },
   {
     node: <SiJavascript />,
-    title: "Javascript",
-    href: "https://tailwindcss.com",
+    title: "JavaScript",
+    href: "https://developer.mozilla.org/en-US/docs/Web/JavaScript",
   },
   {
     node: <SiMongodb />,
     title: "MongoDB",
-    href: "https://tailwindcss.com",
+    href: "https://www.mongodb.com",
   },
-    {
+  {
     node: <SiSqlite />,
     title: "SQLite",
-    href: "https://tailwindcss.com",
+    href: "https://www.sqlite.org",
   },
 ];
 

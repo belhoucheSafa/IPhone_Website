@@ -22,11 +22,9 @@ const Navbar = () => {
       )}
 
       <div
-        className="flex__center logo"
+        className="nav__logo__wrapper"
         onClick={() => scroll.scrollToTop({ duration: 500 })}
-      >
-        <Logo />
-      </div>
+      ></div>
 
       <aside className={`flex__center sidebar ${showSideBar ? "visible" : ""}`}>
         <div className="flex sidebar__top">
@@ -57,18 +55,10 @@ const Navbar = () => {
         </div>
       </aside>
       <div className="flex__center buttons__wrapper">
-        {/* <Link to="contact" className="btn flex__center hire__btn">
-          Hire Me
-          <div className="flex__center icon">
-            <FaArrowUpRightFromSquare />
-          </div>
-        </Link> */}
 
-        <div
 
-          className="user-profile"
-        >
-          <div class="user-profile-inner">
+        <div className="download__cv__btn">
+          <div class="download__cv__btn-inner">
             <p>Download CV</p>
           </div>
         </div>

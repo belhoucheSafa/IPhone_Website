@@ -38,7 +38,7 @@ const Hero = () => {
             the future of technology
             <br />
           </p>
-          <p> All from the heart of Tunisia.</p>
+          <p> All from the heart of Tunisia</p>
           <div className="available__badge">
             <div className="badge__dot"></div>
             <div className="badge__text">Available for work</div>

@@ -1,5 +1,7 @@
 .navbar {
-  align-items: stretch;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
   justify-content: space-between;
   padding: 10px 20px;
   position: fixed;
@@ -12,14 +14,21 @@
   border-radius: 50px;
 }
 
-.navbar .logo {
+.navbar .nav__logo__wrapper {
   cursor: pointer;
+  height: 35px;
+  width: 35px;
+  background-color: #fff;
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background-image: url("../../assets/logos/mainLogo.png");
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
 }
 
-.navbar .logo svg {
-  width: 30px;
-  height: 30px;
-}
 
 .navbr .sidebar__middle {
   align-items: center;
@@ -132,14 +141,14 @@
 }
 
 /* From Uiverse.io by reglobby */
-.user-profile {
+.download__cv__btn {
   width: fit-content;
   height: 38px;
   padding: 3px;
-  border-radius: 10px;
+  border-radius: 25px;
   cursor: pointer;
   transition: 0.3s ease;
-  background:linear-gradient(
+  background: linear-gradient(
     to bottom left,
     var(--color-primary) 0%,
     #702dff0a 30%
@@ -150,17 +159,17 @@
   justify-content: center;
 }
 
-.user-profile:hover,
-.user-profile:focus {
+.download__cv__btn:hover,
+.download__cv__btn:focus {
   background-color: #804dee38;
   box-shadow: 0 0 10px #804dee78;
   outline: none;
 }
 
-.user-profile-inner {
+.download__cv__btn-inner {
   width: 100%;
   height: 100%;
-  border-radius: 7px;
+  border-radius: 25px;
   background-color: var(--color-ui-2);
   display: flex;
   align-items: center;
@@ -168,6 +177,6 @@
   gap: 15px;
   color: #fff;
   font-weight: 500;
-  padding: 4px 10px;
-  font-size: 15px;
+  padding: 4px 15px;
+  font-size: 14px;
 }

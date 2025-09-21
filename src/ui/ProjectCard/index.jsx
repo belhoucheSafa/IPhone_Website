@@ -4,7 +4,7 @@ import { TbEyeCode } from "react-icons/tb";
 import ProjectModal from "../ProjectModal";
 
 const ProjectCard = ({ title, category, image, description, stacks }) => {
-  const [isModalOpen, setIsModalOpen] = useState(false);
+  const [isModalOpen, setIsModalOpen] = useState(true);
 
   return (
     <>

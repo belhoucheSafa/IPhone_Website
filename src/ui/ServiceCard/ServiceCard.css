@@ -9,6 +9,7 @@
   background: rgba(var(--color-primary-rgb), 0.03);
   box-shadow: var(--border-shadow),
     0 0 30px rgba(var(--color-primary-rgb), 0.03);
+    cursor: pointer;
 }
 
 .service__card .service__card-top {
