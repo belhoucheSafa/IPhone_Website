@@ -4,7 +4,6 @@
 @tailwind utilities;
 
 :root {
-  /* --color-primary: #2563eb;  */
   --color-primary: #702dff;
   --color-primary-rgb: 112, 45, 255;
   --color-dark: rgba(28, 20, 5, 0.773);

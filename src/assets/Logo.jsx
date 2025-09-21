@@ -2,7 +2,7 @@ const Logo = () => {
   return (
     <svg
       stroke="currentColor"
-      fill="currentColor"
+      fill="#702dff"
       strokeWidth="0"
       role="img"
       viewBox="0 0 24 24"
