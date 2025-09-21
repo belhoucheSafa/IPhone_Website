@@ -6,8 +6,8 @@
   transition: border-color 1s ease-in-out;
   border: 1px solid #1c1c21;
   background-color: #0e0e105c;
-  border-radius: 0.75rem;
-  padding: 30px 20px;
+  border-radius: 10px;
+  padding: 22px 20px;
   break-inside: avoid-column;
   display: flex;
   flex-direction: column;
@@ -58,8 +58,8 @@
 .card__glow .stars {
   display: flex;
   align-items: center;
-  gap: 0.25rem; /* gap-1 */
-  margin-bottom: 1.25rem; /* mb-5 */
+  gap: 0.25rem; 
+  margin-bottom: 10px; 
 }
 
 /* Stars image size */
@@ -87,12 +87,10 @@
   }
 }
 
-/* group-hover:translate-y-0 → when the parent card__glow is hovered */
 .card__glow:hover .stars img.star-img {
   transform: translateY(0);
 }
 
-/* Bounce keyframes (copied from Tailwind’s animate-bounce) */
 @keyframes bounce {
   0%,
   100% {
@@ -106,7 +104,7 @@
 }
 
 /* Review text */
-.card__glow .review {
-  font-size: 14px; /* text-lg */
-  color: #d9ecff; /* text-white-50 */
+.card__glow .review>p {
+  font-size: 13px ; 
+  color: #d9ecff; 
 }

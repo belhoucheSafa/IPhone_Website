@@ -195,7 +195,7 @@
   justify-content: flex-start;
   gap: 8px;
   flex-direction: row;
-  border: 1px solid #47bd58;
+  border: 1px solid #55a861;
   padding: 0 13px 0 10px;
   margin-top: 20px;
   animation: badgeGlow 2.5s infinite alternate;
@@ -217,11 +217,11 @@
   height: 10px;
   width: 10px;
   border-radius: 50%;
-  background-color: #47bd58;
+  background-color: #55a861;
 }
 .badge__text {
   font-size: 13px;
-  color: #47bd58;
+  color: #55a861;
   font-weight: 600;
 }
 

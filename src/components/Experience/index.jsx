@@ -1,6 +1,5 @@
 import "./Experience.css";
 
-
 import gsap from "gsap";
 import { useGSAP } from "@gsap/react";
 import { ScrollTrigger } from "gsap/ScrollTrigger";
@@ -8,10 +7,9 @@ import { ScrollTrigger } from "gsap/ScrollTrigger";
 import { expCards } from "../../constants";
 import GlowCard from "../../ui/GlowCard";
 
+import CALENDAR from "../../assets/icons/3DCalendar.png";
+
 gsap.registerPlugin(ScrollTrigger);
-
-
-
 
 const Experience = () => {
   useGSAP(() => {
@@ -104,36 +102,42 @@ const Experience = () => {
           <div className="experience-cards">
             {expCards.map((card) => (
               <div key={card.title} className="exp-card-wrapper">
-                  <div className="timeline-wrapper">
-                    <div className="timeline" />
-                    <div className="gradient-line" />
+                <div className="timeline-wrapper">
+                  <div className="timeline" />
+                  <div className="gradient-line" />
+                </div>
+                <div className="expText">
+                  <div className="timeline-logo">
+                    <img src={card.logoPath} alt="logo" />
                   </div>
-                  <div className="expText">
-                    <div className="timeline-logo">
-                      <img src={card.logoPath} alt="logo" />
+                  <div className="exp__details__wrapper">
+                    <div className="left__details">
+                      <h1>{card.title}</h1>
+                      <p className="date italic">
+                        <img
+                          src={CALENDAR}
+                          alt="calendar"
+                          className="date-calendar-img"
+                        />
+
+                        
+                        {card.date}
+                      </p>
+                      <ul>
+                        {card.responsibilities.map((responsibility, index) => (
+                          <li key={index}> {responsibility}</li>
+                        ))}
+                      </ul>
                     </div>
-                    <div className="exp__details__wrapper">
-                      <div className="left__details">
-                        <h1>{card.title}</h1>
-                        <p className="date">🗓️&nbsp;{card.date}</p>
-                        <ul>
-                          {card.responsibilities.map(
-                            (responsibility, index) => (
-                              <li key={index}> {responsibility}</li>
-                            )
-                          )}
-                        </ul>
-                      </div>
-                      <div className="right__details">
-                        <GlowCard card={card}></GlowCard>
-                      </div>
+                    <div className="right__details">
+                      <GlowCard card={card}></GlowCard>
                     </div>
                   </div>
+                </div>
               </div>
             ))}
           </div>
         </div>
-       
       </div>
     </section>
   );

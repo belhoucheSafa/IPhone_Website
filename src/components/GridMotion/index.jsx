@@ -1,28 +1,25 @@
 import GridMotionUi from "../../ui/GridMotionUi";
-import "./GridMotion.css"
+import "./GridMotion.css";
+import accomplishment1 from "../../assets/Accomplishments/Agile.jpg";
+import accomplishment2 from "../../assets/Accomplishments/certificate-elements-of-ai-Safa.png";
+import accomplishment3 from "../../assets/Accomplishments/Google.jpg";
+import accomplishment4 from "../../assets/Accomplishments/project-management.jpg";
+import accomplishment5 from "../../assets/Accomplishments/Python-Kaggle.png";
+
 const items = [
-  "Item 1",
-  <div key="jsx-item-1">Custom JSX Content</div>,
-  "https://images.unsplash.com/photo-1723403804231-f4e9b515fe9d?q=80&w=3870&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D",
-  "Item 2",
-  <div key="jsx-item-2">Custom JSX Content</div>,
-  "Item 4",
-  <div key="jsx-item-2">Custom JSX Content</div>,
-  "https://images.unsplash.com/photo-1723403804231-f4e9b515fe9d?q=80&w=3870&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D",
-  "Item 5",
-  <div key="jsx-item-2">Custom JSX Content</div>,
-  "Item 7",
-  <div key="jsx-item-2">Custom JSX Content</div>,
-  "https://images.unsplash.com/photo-1723403804231-f4e9b515fe9d?q=80&w=3870&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D",
-
-  
+  accomplishment1,
+  accomplishment2,
+  accomplishment3,
+  accomplishment4,
+  accomplishment5,
 ];
-
-import React from "react";
 
 const GridMotion = () => {
   return (
     <div id="gridMotion">
+      <div className="section__header">
+        <h2 className="shine">Accomplishments</h2>
+      </div>
       <GridMotionUi items={items} />
     </div>
   );

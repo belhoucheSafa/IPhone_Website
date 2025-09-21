@@ -52,13 +52,12 @@ const motionTexts = [
   { text: "React", rotate: 35, top: "20%", left: "30%" },
   { text: "Node.js", rotate: -15, top: "25%", left: "60%" },
   { text: "GraphQL", rotate: 25, top: "35%", left: "82%" },
-  { text: "Microservices", rotate: -30, top: "120%", left: "15%" },
 ];
 
 const motionImages = [
   { image: CSharpLogo, rotate: 30, top: "30%", left: "50%" },
   { image: BlazorLogo, rotate: -45, top: "-33%", left: "90%" },
-  { image: DotNetLogo, rotate: -45, top: "7%", left: "-16%" },
+  { image: DotNetLogo, rotate: -45, top: "-36%", left: "19%" },
   { image: ReduxLogo, rotate: 0, top: "34%", left: "13%" },
 
 ];

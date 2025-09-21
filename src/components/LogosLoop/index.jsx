@@ -4,6 +4,12 @@ import {
   SiNextdotjs,
   SiTypescript,
   SiTailwindcss,
+  SiThreedotjs,
+  SiRedux,
+  SiNodedotjs ,
+  SiJavascript ,
+  SiMongodb ,
+  SiSqlite 
 } from "react-icons/si";
 
 const techLogos = [
@@ -17,6 +23,36 @@ const techLogos = [
   {
     node: <SiTailwindcss />,
     title: "Tailwind CSS",
+    href: "https://tailwindcss.com",
+  },
+  {
+    node: <SiThreedotjs />,
+    title: "Three JS",
+    href: "https://tailwindcss.com",
+  },
+  {
+    node: <SiNodedotjs />,
+    title: "Node JS",
+    href: "https://tailwindcss.com",
+  },
+  {
+    node: <SiRedux />,
+    title: "Redux",
+    href: "https://tailwindcss.com",
+  },
+  {
+    node: <SiJavascript />,
+    title: "Javascript",
+    href: "https://tailwindcss.com",
+  },
+  {
+    node: <SiMongodb />,
+    title: "MongoDB",
+    href: "https://tailwindcss.com",
+  },
+    {
+    node: <SiSqlite />,
+    title: "SQLite",
     href: "https://tailwindcss.com",
   },
 ];

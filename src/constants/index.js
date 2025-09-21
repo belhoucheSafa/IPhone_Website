@@ -14,7 +14,6 @@ import {
   threejs,
 } from "../assets/index";
 
-
 const navLinks = [
   {
     name: "Work",
@@ -163,97 +162,79 @@ const techStackIcons = [
 ];
 
 const expCards = [
-
   {
-    review:
-      "This year laid the foundation for my logical thinking and problem-solving skills",
+    title: "Baccalaureate – Mathematical Sciences",
+    date: "2020 – 2021",
     imgPath: "/images/exp1.png",
     logoPath: "/images/logo1.png",
-    title: "Baccalauréat – Sciences Mathématiques",
-    date: "2020 – 2021",
+    rating: 3,
     responsibilities: [
       "Developed logical and analytical thinking skills.",
       "Prepared for problem-solving challenges in software development.",
     ],
+    review:
+      "This year laid the foundation for my logical thinking and problem-solving skills.",
   },
   {
-    review:
-      "I discovered my passion for programming and IT, and this year was crucial",
+    title:
+      "1st Year – Bachelor in Computer Science for Management - At EPI School",
+    date: "2021 – 2022",
     imgPath: "/images/exp1.png",
     logoPath: "/images/logo1.png",
-    title: "1st Year Licence – Informatique de Gestion (EPI)",
-    date: "2021 – 2022",
+    rating: 4,
     responsibilities: [
       "Introduced to programming, databases, and IT fundamentals.",
       "Completed small projects to strengthen analytical and coding skills.",
     ],
+    review:
+      "I discovered my passion for programming and IT, and this year was crucial.",
   },
   {
-    review:
-      "This internship helped me strengthen Java/OOP skills and understand real-world coding",
+    title:
+      "2nd Year – Bachelor in Business Intelligence - At Polytechnique Sousse",
+    date: "2022 – 2023",
     imgPath: "/images/exp1.png",
     logoPath: "/images/logo1.png",
-    title: "2nd Year Licence – Business Intelligence (Major de Promotion)",
-    date: "2022 – 2023",
+    rating: 3,
     responsibilities: [
       "Focused on data analysis, SQL, and decision-support systems.",
-      "Completed internship at TechnolowhiWhiteCape Technologies: learned Java and applied OOP concepts.",
+      "Completed internship at Whitecape Technologies: strengthened Java and applied OOP concepts.",
       "Achieved top academic performance.",
     ],
+    review:
+      "This internship helped me strengthen Java/OOP skills and understand real-world coding.",
   },
   {
-    review:
-      "Developing the Polyschool platform was a milestone — I handled everything end-to-end",
+    title:
+      "3rd Year – Bachelor in Business Intelligence (Graduated with Honors)",
+    date: "2023 – 2024",
     imgPath: "/images/exp1.png",
     logoPath: "/images/logo1.png",
-    title: "Internship – Polyschool Web Project",
-    date: "2023",
+    rating: 5,
     responsibilities: [
-      "Designed, coded, and deployed a full-stack web application.",
-      "Built responsive UI/UX and backend functionality with Python/Django.",
-      "Managed project lifecycle independently.",
-    ],
-  },
-  {
-    review:
-      "This year was transformative: I built a large full-stack project, dashboards, and learned data cleaning",
-    imgPath: "/images/exp1.png",
-    logoPath: "/images/logo1.png",
-    title: "Licence – Business Intelligence (Mention Excellent)",
-    date: "2023",
-    responsibilities: [
-      "Designed and implemented a large-scale web project from conception to deployment.",
+      "Completed a 9-month final year internship (Capstone Project) with major responsibilities.",
+      "Designed and implemented a large-scale web application from conception to deployment.",
       "Handled full-stack development: frontend UI/UX, backend logic, and database integration.",
       "Built dashboards and reporting tools to visualize complex data.",
       "Performed data cleaning, transformation, and preparation for analysis.",
       "Applied advanced SQL, Python, and BI tools to deliver functional and maintainable solutions.",
     ],
+    review:
+      "This year was transformative :  <br />my 9-month internship and capstone project gave me strong hands-on expertise and prepared me for professional challenges.",
   },
   {
-    review:
-      "Leading the socio-cultural project was rewarding: earned EUR-ACE recognition, became volunteer in ESoS & Maison des Aînés, and met amazing people",
-    imgPath: "/images/exp1.png",
-    logoPath: "/images/logo1.png",
-    title: "Engineering Cycle – Socio-Cultural Project",
-    date: "2024",
-    responsibilities: [
-      "Led a small team to deliver a full-stack web application.",
-      "Coordinated frontend and backend integration using React and Node.js.",
-      "Implemented Agile workflow and ensured project delivery on time.",
-      "Received EUR-ACE recognition for project quality and impact.",
-    ],
-  },
-  {
-    review:
-      "Currently expanding my software engineering expertise, experimenting with modern technologies",
-    imgPath: "/images/exp1.png",
-    logoPath: "/images/logo1.png",
-    title: "Engineering Cycle – Software Engineering",
+    title: "Engineering Cycle – Software Engineering - At Polytechnique Sousse",
     date: "2024 – Present",
+    imgPath: "/images/exp1.png",
+    logoPath: "/images/logo1.png",
+    rating: 4,
     responsibilities: [
       "Focused on advanced software development, system design, and modern technologies.",
-      "Working with React, React Native, Django, Java, cloud computing, and CI/CD pipelines.",
+      "Worked with React, React Native, Django, Java, cloud computing, and CI/CD pipelines.",
+      "Engaged in volunteering activities at SOS Village and Elder Care Center, making a positive social impact.",
     ],
+    review:
+      "This year was pivotal : <br />I advanced my engineering skills while contributing to social projects — volunteering at SOS Akouda and Elder Care Center was one of the most meaningful experiences of my journey !",
   },
 ];
 
@@ -403,8 +384,5 @@ export {
   techStackIcons,
   techStackImgs,
   navLinks,
-  technologies
+  technologies,
 };
-
-
-

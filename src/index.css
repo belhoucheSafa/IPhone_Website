@@ -372,3 +372,48 @@ img {
 .special-motion-card {
   background: var(--color-primary);
 }
+.grid__motion__card {
+  position: relative;
+  overflow: hidden;
+  cursor: pointer;
+  box-shadow: var(--border-shadow);
+  border: 1px solid transparent;
+}
+
+/* border glow layer */
+.grid__motion__card::before {
+  content: "";
+  position: absolute;
+  inset: 0;
+  border-radius: inherit;
+  padding: 2px;
+  background: linear-gradient(90deg, #ff0080, #7928ca, #00ffff, #ff0080);
+  background-size: 300% 300%;
+  z-index: 2; /* sits above image but below text */
+  mask: linear-gradient(#fff 0 0) content-box, linear-gradient(#fff 0 0);
+  -webkit-mask: linear-gradient(#fff 0 0) content-box, linear-gradient(#fff 0 0);
+  -webkit-mask-composite: xor;
+  mask-composite: exclude;
+  opacity: 0;
+  transition: opacity 0.3s ease;
+}
+
+.grid__motion__card:hover::before {
+  opacity: 1;
+  animation: neon-border 6s linear infinite;
+}
+
+/* ensure inner image is always under border */
+.grid__motion__card > .card-img {
+  position: absolute;
+  inset: 0;
+  background-size: cover;
+  background-position: center;
+  z-index: 0;
+}
+
+/* text/content stays above everything */
+.grid__motion__card > .card-content {
+  position: relative;
+  z-index: 3;
+}

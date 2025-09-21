@@ -1,5 +1,5 @@
 import { useRef } from "react";
-import "./GlowCard.css"
+import "./GlowCard.css";
 
 const GlowCard = ({ card, index, children }) => {
   // refs for all the cards
@@ -35,18 +35,16 @@ const GlowCard = ({ card, index, children }) => {
     >
       <div className="glow"></div>
       <div className="stars">
-        {Array.from({ length: 5 }, (_, i) => (
-          
-          <img key={i} src="/images/star.png" alt="star" className="star-img"/>
+        {Array.from({ length: card.rating }, (_, i) => (
+          <img key={i} src="/images/star.png" alt="star" className="star-img" />
         ))}
       </div>
       <div className="review">
-        <p >{card.review}</p>
+        <p dangerouslySetInnerHTML={{ __html: card.review }} />
       </div>
       {children}
     </div>
   );
 };
-
 
 export default GlowCard;
