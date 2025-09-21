@@ -224,7 +224,7 @@
   object-fit: cover;
 }
 .demo__details__box {
-  width: 350px;
+  width: 370px;
   height: 100%;
   
   border-radius: 10px;
@@ -237,7 +237,8 @@
  
 }
 .demo__details__code__block {
-  max-height: 500px;
+  max-height: 80vh;
+  height: 80vh;
   width: 100%;
    overflow-y: auto;
   overflow-x: hidden;

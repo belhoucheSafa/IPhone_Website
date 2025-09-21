@@ -247,7 +247,7 @@ img {
   line-clamp: 1;
 }
 .section__wrapper {
-  max-width: 1190px;
+  max-width: 85%;
   margin: auto;
   padding: 80px 20px;
 }
@@ -283,7 +283,7 @@ img {
   display: flex;
   align-items: center;
   justify-content: center;
-  margin-bottom: 60px;
+  margin-bottom: 90px;
   text-align: center;
 }
 

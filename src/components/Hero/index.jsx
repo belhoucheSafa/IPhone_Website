@@ -34,7 +34,7 @@ const Hero = () => {
             <h1>that Deliver Results</h1>
           </div>
           <p className="hero-subtext">
-            Crafting elegant code, building impactful projects, and exploring
+            Crafting elegant code, building impactful projects, and exploring<br/>
             the future of technology
             <br />
           </p>
