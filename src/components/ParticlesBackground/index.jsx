@@ -16,11 +16,11 @@ const ParticlesBackground = () => {
         background: { color: { value: "transparent" } },
         fpsLimit: 120,
         particles: {
-          number: { value: 40, density: { enable: true, area: 800 } },
+          number: { value: 30, density: { enable: true, area: 800 } },
           color: { value: "#884eb1" },
           shape: { type: "circle" },
-          opacity: { value: 0.1 },
-          size: { value: 2, random: true },
+          opacity: { value: 0.4 },
+          size: { value: 3, random: true },
           links: { 
             enable: true, 
             distance: 100, 

@@ -16,7 +16,7 @@ const items = [
 
 const GridMotion = () => {
   return (
-    <div id="gridMotion">
+    <div id="gridMotion" >
       <div className="section__header">
         <h2 className="shine">Accomplishments</h2>
       </div>

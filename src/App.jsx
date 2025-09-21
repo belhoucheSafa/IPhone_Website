@@ -35,7 +35,7 @@ const App = () => {
       <Contact />
       <Footer />
 
-      <SplashCursor />
+      {/* <SplashCursor /> */}
     </>
   );
 };
