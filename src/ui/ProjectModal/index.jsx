@@ -3,7 +3,7 @@ import Plyr from "plyr-react";
 import "plyr-react/plyr.css";
 import "./ProjectModal.css";
 import ParticlesBackground from "../../components/ParticlesBackground";
-import PROJECTDEMOVIDEO from "../../assets/videos/project1.mp4";
+import PROJECTDEMOVIDEO from "../../assets/projectsDemos/SplytProject.mp4";
 import SyntaxHighlight from "react-syntax-highlighter";
 import { a11yLight } from "react-syntax-highlighter/dist/esm/styles/hljs";
 import { IoLockClosed } from "react-icons/io5";

@@ -1,1 +1,2 @@
 assets/projectsDemos/*.mp4 filter=lfs diff=lfs merge=lfs -text
+src/assets/projectsDemos/*.mp4 filter=lfs diff=lfs merge=lfs -text
